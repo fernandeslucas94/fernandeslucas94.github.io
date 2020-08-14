@@ -1,0 +1,88 @@
+/* 
+=========
+CSS RESET
+=========
+*/
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%; /* 10px */
+}
+/* 
+====================
+END OF THE CSS RESET
+====================
+ */
+
+ 
+ 
+ /* 
+ ==========
+ HEADER CSS
+ ==========
+ */
+ .page-header {
+     background-color: darkblue;
+     width: 100%;
+     height: 10rem;
+     display: flex;
+     justify-content: center;
+}
+
+.header-container {
+    height: 7rem;
+    width: 900px;
+    font-size: 8.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+
+
+.header-container ul li {
+    display: inline-flex;
+    color: #FFF;
+    text-transform: uppercase;
+    list-style: none;
+    margin-bottom: 3rem;
+}
+
+.header-container ul a {
+    text-decoration: none;
+}
+
+.header-container ul a:hover {
+    text-decoration: underline #ccc;
+}
+
+.header-container ul {
+    border: 1px solid #FFF;
+}
+/* 
+==============
+END HEADER CSS
+==============
+*/
+
+
+/*
+==========
+BANNER CSS
+==========
+*/
+
+.banner {
+    background-color: #ccc;
+    background-image: url(../images/laptop-with-code.jpg);
+    background-size: cover;
+    background-position: top;
+    
+    height: 35rem;
+}
+
+.rgba-banner {
+    background-color: rgba(0, 0, 0, 0.2);
+    height: 35rem;
+}
