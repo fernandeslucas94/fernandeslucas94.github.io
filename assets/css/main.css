@@ -109,3 +109,123 @@ BANNER CSS
     margin-top: 1.5rem;
     margin-bottom: 0.5rem;
 }
+
+/* 
+==============
+END BANNER CSS
+==============
+*/
+
+/* 
+=============
+PAGE BODY CSS 
+=============
+*/
+
+#page-body {
+    background-color: #eee;
+}
+
+/* 
+============
+END BODY CSS
+============
+*/
+
+
+/* 
+==============
+RESPONSIVE CSS
+==============
+*/
+
+@media (min-width: 572px) and (max-width: 885px) {
+    .page-header {
+        height: 13.5rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header-container ul {
+        border: 0;
+    }
+}
+
+@media (min-width: 572px) and (max-width: 885px){
+    .header-container ul {
+        text-align: center;
+    }
+}
+
+@media (min-width: 436px) and (max-width: 571px) {
+    .page-header {
+        height: 16rem;
+    }
+
+    .header-container ul {
+        border: 0;
+        text-align: center;
+        margin-top: 5rem;
+    }
+}
+
+@media (min-width: 320px) {
+    .rgba-banner {
+        height: 40rem;
+    }
+
+    .banner {
+        height: 40rem;
+    }
+
+    .rgba-banner img, h1{
+        margin-top: 9rem;
+    }
+}
+
+@media (min-width: 301px) and (max-width:438px ) {
+    .page-header {
+        height: 18rem;
+    }
+
+    .header-container ul {
+        text-align: center;
+        border: 0;
+    }
+}
+
+@media (min-width: 259px ) and (max-width: 300px) {
+    .header-container ul {
+        font-size: 4.3rem;
+        text-align: center;
+        border: 0;
+    }
+    
+    .page-header {
+        height: 16rem;
+    }
+
+    .header-container ul {
+        border: 0;
+    }
+}
+
+@media (min-width: 149px) and (max-width: 257px) {
+    .header-container ul {
+        border: 0;
+    }
+}
+
+@media (min-width: 150px) and (max-width: 320px) {
+    .rgba-banner {
+        height: 40rem;
+    }
+
+    .banner {
+        height: 40rem;
+    }
+
+    .rgba-banner img, h1{
+        margin-top: 9rem;
+    }
+}
