@@ -169,6 +169,21 @@ RESPONSIVE CSS
     }
 }
 
+@media (max-width: 435px) {
+    .header-container {
+        height: 25rem;
+        background-color: darkslategray;
+    }
+
+    .page-header {
+        height: 10rem;
+    }
+
+    .rgba-banner {
+        margin-top: 8rem;
+    }
+}
+
 @media (min-width: 320px) {
     .rgba-banner {
         height: 40rem;
@@ -182,7 +197,6 @@ RESPONSIVE CSS
         margin-top: 9rem;
     }
 }
-
 @media (min-width: 301px) and (max-width:438px ) {
     .page-header {
         height: 18rem;
