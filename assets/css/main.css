@@ -72,6 +72,21 @@ END OF THE CSS RESET
 .header-container ul {
     border: 1px solid #FFF;
 }
+
+nav {
+    width: 90vw;
+    display: inline-block;
+    text-align: center;
+}
+
+nav a {
+    margin-top: 2rem;
+    padding-right: 6rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+}
 /* 
 ==============
 END HEADER CSS
@@ -263,11 +278,95 @@ RESPONSIVE CSS
     }
 }
 
-@media (min-width: 436px) and (max-width: 571px) {
-    .page-header {
-        height: 16rem;
+@media (max-width: 582px) {
+    nav {
+        display: none;
     }
 
+    .one,
+    .two,
+    .three {
+        background-color: #fff;
+        height: 5px;
+        width: 100%;
+        margin: 6px auto;
+
+        transition-duration: 0.3s;
+    }
+
+    .menu-toggle {
+        width: 40px;
+        height: 30px;
+        margin-bottom: 2rem;
+        margin-left: 25rem;
+    }
+
+    /* Fullscreen */
+
+    .header-container.on {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: darkslategray;
+
+        width: 100vw;
+        height: 100vh;
+
+        z-index: 10;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header-container.on .menu-toggle {
+        top: 15px;
+        right: 0;
+        margin-right: 5rem;
+        position: absolute;
+    }
+
+    .header-container.on .menu-toggle .one {
+        transform: rotate(45deg) translate(8px, -9px);
+    }
+
+    .header-container.on .menu-toggle .two {
+        opacity: 0;
+    }
+
+    .header-container.on .menu-toggle .three {
+        transform: rotate(-45deg) translate(24.5px, -9.5px);
+    }
+
+    .header-container.on nav {
+        display: block;
+        text-align: center;
+    }
+
+    .header-container.on nav ul a {
+        transition-duration: 0.5s;
+        font-size: 3rem;
+        line-height: 4rem;
+        display: block;
+    }
+
+    .page-header {
+        margin-bottom: -8rem;
+    }
+
+    .header-container {
+        margin-bottom: -8rem;
+    }
+}
+
+@media (min-width: 572px) and (max-width:582px) {
+     .menu-toggle {
+        margin-top: -16rem;
+    } 
+}
+
+@media (min-width: 436px) and (max-width: 571px) {
+    
     .header-container ul {
         border: 0;
         text-align: center;
@@ -275,15 +374,25 @@ RESPONSIVE CSS
     }
 }
 
+@media (min-width: 433px) and (max-width: 582px) {
+    .page-header {
+        height: 18rem;
+    }
+
+    .menu-toggle {
+        margin-left: 30rem;
+    }
+}
+
 @media (max-width: 435px) {
-    .header-container {
+    /* .header-container {
         height: 25rem;
         background-color: darkslategray;
     }
 
     .page-header {
         height: 10rem;
-    }
+    } */
 
     .rgba-banner {
         margin-top: 8rem;
@@ -317,9 +426,13 @@ RESPONSIVE CSS
         margin-bottom: 1rem;
     }
 
+    #page-body {
+        width: 100%;
+    }
+
 }
 @media (min-width: 301px) and (max-width:438px ) {
-    .page-header {
+    /* .page-header {
         height: 18rem;
     }
 
@@ -327,10 +440,105 @@ RESPONSIVE CSS
         text-align: center;
         border: 0;
     }
+} */
+
+@media (min-width: 299px) and (max-width:331px) {
+    nav {
+        display: none;
+    }
+
+    .one,
+    .two,
+    .three {
+        background-color: #fff;
+        height: 5px;
+        width: 100%;
+        margin: 6px auto;
+
+        transition-duration: 0.3s;
+    }
+
+    .menu-toggle {
+        width: 40px;
+        height: 30px;
+        margin-bottom: 2rem;
+    }
+
+    /* Fullscreen */
+
+    .header-container.on {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: darkslategray;
+
+        width: 100vw;
+        height: 100vh;
+
+        z-index: 10;
+
+        
+    }
+
+    .header-container.on .menu-toggle {
+        top: 15px;
+        right: 0;
+        margin-right: 5rem;
+        position: absolute;
+    }
+
+    .header-container.on .menu-toggle .one {
+        transform: rotate(45deg) translate(8px, -9px);
+    }
+
+    .header-container.on .menu-toggle .two {
+        opacity: 0;
+    }
+
+    .header-container.on .menu-toggle .three {
+        transform: rotate(-45deg) translate(24.5px, -9.5px);
+    }
+
+    .header-container.on nav {
+        display: block;
+        text-align: center;
+    }
+
+    .header-container.on nav ul a {
+        transition-duration: 0.5s;
+        font-size: 3rem;
+        line-height: 4rem;
+    }
+}
+
+@media (min-width: 270px) and (max-width: 330px) {
+    .page-header,
+    .header-container,
+    .banner,
+    .rgba-banner {
+        width: 34.5rem;
+    }
+
+    .one,
+    .two,
+    .three {
+        background-color: #fff;
+        height: 5px;
+        width: 100%;
+        margin: 6px auto;
+        margin-left: 15rem;
+    }
+
+    .menu-toggle {
+        width: 40px;
+        height: 30px;
+        margin-bottom: 2rem;
+        margin-right: 5rem;
+    }
 }
 
 @media (min-width: 259px ) and (max-width: 300px) {
-    .header-container ul {
+    /* .header-container ul {
         font-size: 4.3rem;
         text-align: center;
         border: 0;
@@ -342,14 +550,14 @@ RESPONSIVE CSS
 
     .header-container ul {
         border: 0;
-    }
+    } */
 }
 
 @media (min-width: 149px) and (max-width: 257px) {
-    .header-container ul {
+    /* .header-container ul {
         border: 0;
     }
-}
+} */
 
 @media (min-width: 150px) and (max-width: 320px) {
     .rgba-banner {
