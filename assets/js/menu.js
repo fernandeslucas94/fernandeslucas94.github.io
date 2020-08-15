@@ -1,4 +1,4 @@
-let show = false;
+let show = true;
 
 const menuSection = document.querySelector(".header-container")
 const menuToggle = menuSection.querySelector(".menu-toggle")
